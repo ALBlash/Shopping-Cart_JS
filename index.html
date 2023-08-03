@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="txt-heading">Shopping cart</h1>
+        <hr />
+
+        <button id="btn-empty" onclick="emptyCart()">Empty Cart</button>
+
+        <table class="tbl-cart">
+            <thead>
+                <tr>
+                    <th class="align-left">Name</th>
+                    <th class="align-right">Unit Price</th>
+                    <th class="align-right">Quantity</th>
+                    <th class="align-right">Sub Total</th>
+                </tr>
+            </thead>
+            <tbody id="cartTableBody"></tbody>
+            <tfoot>
+                <tr>
+                    <td class="align-right">Total:</td>
+                    <td id="itemCount" colspan="2"></td>
+                    <td id="totalAmount"></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h1 class="txt-heading products">Products</h1>
+        <hr />
+
+        <div class="product-items">
+            <!-- Products will be drawen here -->
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
